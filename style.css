@@ -1,0 +1,286 @@
+*{
+    font-family: 'Fredoka', sans-serif;
+}
+
+body{
+    background-image: url('./images/img/background4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.myTittle{
+    font-family: 'Pacifico', cursive;
+    font-size: 5.0rem;
+    color: #a7577b;
+    margin-bottom: 50px;
+}
+
+p{
+    font-size: 1.0rem;
+    color: #663f51;
+}
+
+.myButton{
+    background: none;
+    border: none;
+    font-size: 1.0rem;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    margin: 5px;
+    background-color: #F3E7E5;
+    padding: 15px;
+    border-radius: 40px;
+    color: #a7577b;
+}
+
+.myButton::after,
+.myButton::before{
+    transition: all 0.2s ease-in-out;
+}
+
+.myButton::before{
+    z-index: -1;
+    position: absolute;
+    content: "";
+    left: -2em;
+    right: -2em;
+    top: -2em;
+    bottom: -2em;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(circle, #D694B2 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #D694B2 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #F3E7E5 20%, transparent 20%),
+    radial-gradient(circle, #D694B2 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #D694B2 20%, transparent 20%),
+    radial-gradient(circle, #D694B2 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #D694B2 20%, transparent 20%),
+    radial-gradient(circle, #D694B2 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #D694B2 20%, transparent 20%),
+    /* */
+    radial-gradient(circle, transparent 10%, #D694B2 20%, transparent 20%),
+    radial-gradient(circle, #D694B2 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #F3E7E5 20%, transparent 20%),
+    radial-gradient(circle, #D694B2 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #D694B2 20%, transparent 20%),
+    radial-gradient(circle, #D694B2 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #F3E7E5 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%, 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%,
+    20% 20%;
+  background-position: 18% 40%, 20% 31%, 30% 30%, 40% 30%, 50% 30%, 57% 30%,
+    65% 30%, 80% 32%, 15% 60%, 83% 60%, 18% 70%, 25% 70%, 41% 70%, 50% 70%,
+    64% 70%, 80% 71%;
+}
+
+.myButton:hover::before{
+    background-position: 5% 44%, -5% 20%, 7% 5%, 23% 0%, 37% 0, 58% -2%, 80% 0%,
+    100% -2%, -5% 80%, 100% 55%, 2% 100%, 23% 100%, 42% 100%, 60% 95%, 70% 96%,
+    100% 100%;
+    background-size: 0% 0%;
+    transition: background-position 0.5s ease-in-out, background-size 0.75s ease-in-out;
+}
+
+
+
+.myTittleCard{
+    font-size: 1.5rem;
+    color: #c56a94 !important;
+    font-family: 'pacifico', cursive;
+}
+
+
+
+.stars{
+    position: absolute;
+    opacity: 0;
+    top: -.3em;
+    right: -.3em;
+    height: 100%;
+    transition: transform 300ms, opacity 150ms;
+}
+
+
+.stars :nth-child(n){
+    fill: #D694B2;
+}
+
+.buttonCard{
+    position: relative;
+    cursor: pointer;
+    padding: 1em 2em;
+    border: 0;
+    border-radius: 40px;
+    font-weight: bolder;
+    transition: 150ms, box-shadow 150ms;
+    box-shadow: 0 0  #D694B2;
+    background-color: #F3E7E5;
+    color: #a7577b;
+}
+
+.buttonCard:hover{
+    transform: translate(.3em, -.3em);
+    box-shadow: -.3em .3em #D694B2;
+}
+
+.buttonCard:hover > .stars{
+    opacity: 1;
+    transform: translate(.2em, -2em);
+}
+
+.buttonCard:active > .stars :nth-child(n){
+    fill: #ccc;
+}
+
+
+
+.myLabel{
+    font-size: 1.2rem;
+    color: #a7577b;
+    font-family: 'pacifico', cursive;
+    background: rgba(237, 175, 203, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.8px);
+    -webkit-backdrop-filter: blur(7.8px);
+    border: 1px solid rgba(255, 221, 236, 0.51);
+    border-radius: 40px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.myInput{
+    font-size: 1.5rem;
+    background: rgba(255, 214, 232, 0.24)!important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.8px);
+    -webkit-backdrop-filter: blur(7.8px)!important;
+    border: 1px solid rgba(255, 255, 255, 0.51)!important;
+    border-radius: 40px!important;
+    padding: 10px!important;
+
+}
+
+
+.myFooter{
+    background: rgba(255, 253, 253, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
+    border: 1px solid rgba(255, 253, 253, 0.3);
+    padding: 20px;
+  
+  }
+  
+  .redsocial{
+    display: flex;
+    height: 70px;
+    width: 270px;
+  }
+
+  .redsocial svg{
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+
+  .redsocial .social-link1, .redsocial .social-link2, .redsocial .social-link3, .redsocial .social-link4{
+   position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+  }
+
+  .redsocial svg{
+    transform: scale(1);
+  }
+  
+
+  .redsocial .social-link1:hover{
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    animation: bounce_613 0.5s linear;
+  }
+
+
+  .redsocial .social-link2:hover{
+    background-color: #00ccff;
+    animation: bounce_613 0.5s linear;
+  }
+
+    .redsocial .social-link3:hover{
+        background-color: #5865f2;
+        animation: bounce_613 0.5s linear;
+    }
+
+    .redsocial .social-link4:hover{
+        background-color: #12a50b;
+        animation: bounce_613 0.5s linear;
+    }
+
+
+    @keyframes bounce_613{
+        40%{
+            transform: scale(1.4);
+        }
+        60%{
+            transform: scale(0.8);
+        }
+        80%{
+            transform: scale(1.2);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+
+
+
+
+
+
+@media (max-width: 876px ){
+    .myTittle{
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+
+    .contentLand{
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.31);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.3px);
+        -webkit-backdrop-filter: blur(6.3px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 20px;
+    }
+
+    .myCard{
+        background: rgba(237, 175, 203, 0.24);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.8px);
+        -webkit-backdrop-filter: blur(7.8px);
+        border: 1px solid rgba(255, 221, 236, 0.51);
+        border-radius: 40px;
+
+    }
+}
